@@ -10,5 +10,5 @@ ON Industrial_Technology_Prelim_output_2.*
 TO 'Jesyl'
 
 REVOKE SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, DROP
-ON Industrial_Technology_Prelim_outpur_2.*
+ON Industrial_Technology_Prelim_output_2.*
 FROM 'Jesyl'
