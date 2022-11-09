@@ -1,0 +1,28 @@
+CREATE DATABASE Hotel_Management_Industry;
+USE Hotel_Management_Industry;
+
+CREATE TABLE Customer_Record(
+    ID_NUMBER INT AUTO_INCREMENT NOT NULL,
+    NAME_OF_CUSTOMER VARCHAR(255) NOT NULL,
+    ADDRESS VARCHAR(255),
+    OCCUPATION VARCHAR(255) NOT NULL,
+    EMAIL VARCHAR(255) NOT NULL,
+    CONTACT_NUMBER CHAR(15) NOT NULL,
+    CHECK_IN DATETIME NOT NULL,
+    CHECK_OUT DATETIME NOT NULL,
+    PRIMARY KEY(ID_NUMBER)
+    );
+   
+ 
+INSERT INTO Customer_Record(NAME_OF_CUSTOMER,ADDRESS,OCCUPATION,EMAIL,CONTACT_NUMBER,CHECK_IN,CHECK_OUT)
+     VALUES('Alex Go','Rainbow Mountains, Zhangye Danxia, China','Software Developer','AlexGo@gmail.com',+012656489,20060222110215,20060222190215),
+	   ('Pretylyn Abella','Grand Cantyon National Parl, USA','Electrician','PretylynAbellao@gmail.com',+012656448,	20070222110216,20070222200216),
+	   ('Bea Ce','Huancachina, Peru','Dentist','BaeCeo@gmail.com',+012656426,	20080222110218,20080222180218),
+           ('Thea Chin','Salar De Uyuni Bolivia','House Painter and Dectator','TheaChino@gmail.com',+012656478,20090222110219,20090222170219),
+           ('Don Mag','Plitvicce Lakes Nationaal Park, Croatia','Construction Worker','DonMago@gmail.com',+012656418,20040222110221,20040222160221),
+           ('Shai Lasola','Milford Sound, New Zealand, Croatia','Paramedic','ShaiLasolao@gmail.com',+012656426,20030222110220,20030222150220),
+           ('Maryrose Sentilla','Machu Pichhu, Peru. Historic Sanctuary','Architect','MaryroseSintillao@gmail.com',+012656448,20020222110218,20020222160218),
+           ('Phoebe Moralde','Machu Pichhu, Peru.','Financial Manager','PhoebeMoraldeo@gmail.com',+012656418,20010222110219,20010222180219);
+        
+        
+SELECT * FROM Customer_Record;
